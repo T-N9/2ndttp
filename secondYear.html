@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+		var day=sessionStorage.getItem("Day");
+		if(day=="Monday"){
+			window.open("SecondMonday.html");
+			window.close();
+		}
+		else if(day=="Tuesday"){
+			window.open("SecondTuesday.html");
+			window.close();
+		}
+		else if(day=="Wednesday"){
+			window.open("SecondWednesday.html");
+			window.close();
+		}
+		else if(day=="Thursday"){
+			window.open("SecondThursday.html");
+		    window.close();
+		}
+		else if(day=="Friday"){
+			window.open("SecondFriday.html");
+			window.close();
+		}
+		else
+		{
+			window.open("close.html");
+		    window.close();
+		}	
+			
+	</script>
+</body>
+</html>

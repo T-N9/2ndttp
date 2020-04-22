@@ -1,0 +1,171 @@
+<html>
+<head><title></title>
+<link rel="stylesheet" type="text/css" href="css/aos.css">
+<link rel="stylesheet" type="text/css" href="css/first.css">
+<script>
+function startTime() {
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+
+document.getElementById('txt').innerHTML=
+                    h + ":" + m + ":" + s;
+	var t=setTimeout(startTime,500);
+
+}
+
+function checkTime(i){
+ if(i<10) { i="0" +i};//add zero in front of numbers<10
+return i;
+}
+</script>
+
+</head>
+<body align="center" onload="startTime()">
+
+	<img src="img/pic2.png" type="image" id="pic">
+	<img src="img/pic2.png" type="image">
+	
+
+<center><div id="reg"><span  id="sp" data-shadow-text="Today Schedule">Today Schedule</span></div></center>
+
+
+	<center><div class="js1"><script type="text/javascript">
+		var d = new Date();
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+var n = month[d.getMonth()];
+var day=d.getDate();
+var year=d.getFullYear();
+document.write(day+" | "+n+" | "+year);
+
+var d = new Date();
+
+
+ 		var weekday = new Array(7);
+ 		weekday[0] = "Sunday";
+ 		weekday[1] = "Monday";
+ 		weekday[2] = "Tuesday";
+		weekday[3] = "Wednesday";
+		weekday[4] = "Thursday";
+		weekday[5] = "Friday";
+		weekday[6] = "Saturday";
+		//console.log(d.getDay());
+		var Day= weekday[d.getDay()];
+
+	</script></div></center><br>
+	<center><div id="txt"></div></center><br><br>
+
+	<center><button class="button" onclick="firstYear()"><span>First Year</span></button></center>
+	<center><button class="button" onclick="secondYear()"><span>Second Year</span></button></center>
+	<center><button class="button" onclick="thirdYear()"><span>Third Year</span></button></center>
+	<center><button class="button" onclick="fouthYear()"><span>Fourth Year</span></button></center><br><br><br>
+
+<script type="text/javascript" src="js/aos.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+ <script type="text/javascript">
+    function firstYear(){
+		if(Day=="Monday")
+		{
+		window.location = "first_year_mon.html";
+	    }
+	    else if (Day=="Tuesday") {
+	    	window.location = "first_year_tue.html";
+	    }
+	    else if (Day=="Wednesday") {
+	    	window.location = "first_year_wed.html";
+	    }
+	    else if (Day=="Thursday") {
+	    	window.location = "first_year_thu.html";
+	    }
+	    else if (Day=="Friday") {
+	    	window.location = "first_year_fri.html";
+	    }
+	    else{
+	    	window.location="close.html";
+	    }
+	}
+
+	function secondYear(){
+		
+		if(Day=="Monday")
+		{
+		    window.location = "second_year_mon.html";
+	    }
+	    else if (Day=="Tuesday") {
+	    	window.location = "second_year_tue.html";
+	    }
+	    else if (Day=="Wednesday") {
+	    	window.location = "second_year_wed.html";
+	    }
+	    else if (Day=="Thursday") {
+	    	window.location = "second_year_thu.html";
+	    }
+	    else if (Day=="Friday") {
+	    	window.location = "second_year_fri.html";
+	    }
+	    else{
+	    	window.location="close.html";
+	    }
+
+	}
+
+	function thirdYear(){
+		if(Day=="Monday")
+		{
+		    window.location = "third_year_mon.html";
+	    }
+	    else if (Day=="Tuesday") {
+	    	window.location = "third_year_tue.html";
+	    }
+	    else if (Day=="Wednesday") {
+	    	window.location = "third_year_wed.html";
+	    }
+	    else if (Day=="Thursday") {
+	    	window.location = "third_year_thu.html";
+	    }
+	    else if (Day=="Friday") {
+	    	window.location = "third_year_fri.html";
+	    }
+	    else{
+	    	window.location="close.html";
+	    }
+	}  
+	function fouthYear(){
+		if(Day=="Monday")
+		{
+		    window.location = "fourth_year_mon.html";
+	    }
+	    else if (Day=="Tuesday") {
+	    	window.location = "fourth_year_tue.html";
+	    }
+	    else if (Day=="Wednesday") {
+	    	window.location = "fourth_year_wed.html";
+	    }
+	    else if (Day=="Thursday") {
+	    	window.location = "fourth_year_thu.html";
+	    }
+	    else if (Day=="Friday") {
+	    	window.location = "fourth_year_fri.html";
+	    }
+	    else{
+	    	window.location="close.html";
+	    }
+	}
+</script>
+</body>
+</html>

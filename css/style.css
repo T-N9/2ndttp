@@ -1,0 +1,194 @@
+.body{
+	margin: 0;
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 10px;
+}
+.whole-wapper{
+	background-color: #000;
+	opacity: 0.9;
+	border-style: ridge;
+    border-width: 1px;
+    border-color: skyblue;
+}
+
+.first-row{
+	margin-top: 20px;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+}
+
+.left-logo{
+	float: left;
+	width: 20%;
+}
+
+.title{
+	color: white;
+	float: left;
+	width: 60%;
+	margin: 0;
+	font-size: 7em;
+	font-family: Apple Chancery;
+    text-shadow: 0.04em 0.04em 0 #9cb8b3;
+}
+
+.right-logo{
+	width: 20%;
+	float: right;
+}
+
+
+.second-row p{
+	color: purple;
+    font-size: 30px;
+    background-color: white;
+    width: 500px;
+    border-radius: 30px;
+    opacity: 0.8;
+    font-family: Apple Chancery;
+    margin-top: 50px;
+    margin-top: 250px;
+}
+
+table {
+    width: 100%;
+}
+
+#hd {
+    width: 100%;
+    background-color: white;
+    opacity: 0.5;
+    height: 100px;
+    font-family: "Aldrich";
+    font-size: 50px;
+}
+
+#ht {
+    color: green;
+    background-color: cyan;
+    font-family: "Aldrich";
+    font-size: 25px;
+}
+
+#td1 {
+    color: darkblue;
+    background-color: white;
+    opacity: 0.8;
+    font-family: "Aldrich";  /*no need*/
+}
+
+#td2 {
+    background-color: white;
+    opacity: 0.8;
+    color: red;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.btt {
+    border-radius: 4px;
+    background-color: purple;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 250px;
+}
+#p1{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*tab panel*/
+ .tab-bar {
+      list-style: none;
+      margin: 0;
+      padding: 10px 10px 0 10px;
+      background: #67b8f7;
+      overflow: hidden;
+    }
+    .tab-bar li {
+      padding: 8px 20px;
+      float: left;
+      margin-right: 8px;
+      background: #fff;
+      cursor: pointer;
+      border-radius: 10px 10px 0 0;
+}
+.panel {
+      min-height: 200px;
+      border: 1px solid #67b8f7;
+      border-top: 0 none;
+      padding: 15px;
+}
+#tab-2 {
+      background: #67b8f7;
+    }
+#panel-2 {
+      display: none;
+}
+#tab-3 {
+      background: #67b8f7;
+    }
+#panel-3 {
+      display: none;
+}
+
+
+
+#time {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+/*end tab panel*/
+#tab-1{
+  font-family: Aldrich;
+  font-weight:bold;
+}
+#tab-2{
+  font-family: Aldrich;
+  font-weight:bold;
+}
+#tab-3{
+  font-family: Aldrich;
+  font-weight:bold;
+}
+.bt{
+    border-radius: 4px;
+    background-color: blue;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+    height: 50px;
+}
+#sp1{
+    color: orange;
+    font-size: 30px;
+}
+#day{
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 50px;
+}
+
+
+
+
+

@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tabbed Panels</title>
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+}
+.active{
+  background-color: red;
+}
+ </style>
+ <script type="text/javascript">
+function startTime() {
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+// m=checkTime(m);
+var mini = (h*60)+m;
+check(mini);
+
+var t=setTimeout(startTime,500);
+
+}
+
+function check(mm){ //check active time
+//console.log(mm);
+  if(mm >= 510 && mm <= 560){
+    first_first_tr.classList.add("active");
+    second_first_tr.classList.add("active");
+    third_first_tr.classList.add("active");
+  }else if(mm >= 570 && mm <= 620){
+    first_second_tr.classList.add("active");
+    second_second_tr.classList.add("active");
+    third_second_tr.classList.add("active");
+  }else if(mm >= 630 && mm <= 680){
+    first_third_tr.classList.add("active");
+    second_third_tr.classList.add("active");
+    third_third_tr.classList.add("active");
+  }else if(mm >= 690 && mm <= 749){
+    first_fouth_tr.classList.add("active");
+    second_fouth_tr.classList.add("active");
+    third_fouth_tr.classList.add("active");
+  }else if(mm >= 750 && mm <= 800){
+    first_fifth_tr.classList.add("active");
+    second_fifth_tr.classList.add("active");
+    third_fifth_tr.classList.add("active");
+  }else if(mm >= 810 && mm <= 860){
+    first_sixth_tr.classList.add("active");
+    second_fifth_tr.classList.add("active");
+    third_sixth_tr.classList.add("active");
+  }else if(mm >= 870 && mm <= 920){
+    first_sixth_tr.classList.add("active");
+    second_seventh_tr.classList.add("active");
+    third_seventh_tr.classList.add("active");
+  }else{
+    document.getElementById('time').innerHTML= "Time Out";
+  }
+}
+
+// function checkTime(i){
+//  if(i<10) { i="0" +i};//add zero in front of numbers<10
+// return i;
+// }
+ </script>
+</head>
+<body class="body" onload="myFunction(); startTime()">
+<div class="whole-wapper">
+<div class="first-row">
+        <div class="left-logo" data-aos="fade-right"><center><a href="first.html"><img src="img/pic2.png"></a></center></div>
+        <div><center><h1 class="title" data-aos="fade-up-left">Today Schedule</h1></center></div>
+        <div class="right-logo" data-aos="fade-left"><center><a href="first.html"><img src="img/pic2.png"></a></center>
+        </div>
+</div>
+      
+<div class="second-row">
+        <center>
+          <p id="day" data-aos="zoom-in-up"></p>
+        </center> <!-- use js -->
+</div>
+<div id="time"></div>
+<ul class="tab-bar">
+<li id="tab-1" onClick="switchOne()">Second Year-CS (Section A)</li> 
+<li id="tab-2" onClick="switchTwo()">Second Year-CS (Section B)</li>
+<li id="tab-3" onClick="switchThree()">Second Year-CT</li>
+  </ul>
+  <!-- time Table for Section A -->
+  <div class="panel" id="panel-1">
+     <div class="third-row" data-aos="flip-left">
+        <table border="2">
+  <tr>
+    <th colspan="3" id="hd">Today Time Table</th>
+  </tr>
+  <tr>
+    <th id="ht"><h1>Subject & Teacher</h1></th>
+    <th id="ht"><h1>Room No.</h1></th>
+    <th id="ht"><h1>Time</h1></th>
+  </tr>
+  <tr id="first_first_tr">
+    <td id="td1"><h1>English</h1>
+      <p id="p1">Teacher:<span id="sp1">Daw Thida Lin    </span><button class="bt"><span>Detail</span></button></p>
+    </td>
+    <td id="td1" align="center"><h1>E Lab-1</h1></td>
+    <td id="td1"><h1>8:30-9:20</h1></td>
+  </tr>
+  <tr id="first_second_tr">
+    <td id="td1"><h1>Advanced Data Structure(203)</h1>
+      <p id="p1">Teacher:<span id="sp1">Dr.Ei Ei Mon   </span><button class="bt"><span>Detail</span></button></p>
+    </td>
+    <td id="td1" align="center"><h1>M-1</h1></td>
+    <td id="td1"><h1>9:30-10:20</h1></td>
+  </tr>
+  <tr id="first_third_tr">
+    <td id="td1"><h1>Software Engineering+System Analysis and Design(206)</h1>
+      <p id="p1">Teacher:<span id="sp1">Dr.Aye Aye Saint     </span><button class="bt"><span>Detail</span></button></p>
+    </td>
+    <td id="td1" align="center"><h1>H-2</h1></td>
+      <td id="td1"><h1>10:30-11:20</h1></td>
+</tr>
+<tr id="first_fouth_tr">
+  <td id="td2" colspan="3"><h1 align="center"> Break Time</h1>
+    </td>
+    
+</tr>
+<tr id="first_fifth_tr">
+  <td id="td1" ><h1>Object-Oriented System Development(204)</h1>
+      <p id="p1">Teacher:<span id="sp1">Daw Cho Zin Oo   </span><button class="bt"><span>Detail</span></button><br>
+        
+    </td>
+    <td id="td1" align="center"><h1>H-6</h1></td>
+      <td id="td1"><h1>12:30-1:20</h1></td>
+</tr>
+<tr id="first_sixth_tr">
+<td id="td1" rowspan="2"><h1>Mathemetics of Computing Volume II(202) </h1>
+      <p id="p1">Teacher:<span id="sp1">Daw Myint Myint Maw     </span><button class="bt"><span>Detail</span></button><br></p>
+      
+    </td>
+    <td id="td1" align="center" rowspan="2"><h1>H-6</h1></td>
+    <td id="td1" align="center" rowspan="2"><h1>1:30-2:20 / 2:30-3:20</h1></td>
+</tr>
+<!-- <tr id="first_seventh_tr">
+      <td id="td1"><h1></h1></td>
+</tr> -->
+</table>
+      </div> 
+  </div>
+  <!-- end Time Table for Section A -->
+
+  <!-- time Table for Section B -->
+  <div class="panel" id="panel-2">
+    <div class="third-row" data-aos="flip-left">
+        <table border="2">
+  <tr>
+    <th colspan="3" id="hd">Today Time Table</th>
+  </tr>
+  <tr>
+    <th id="ht"><h1>Subject & Teacher</h1></th>
+    <th id="ht"><h1>Room No.</h1></th>
+    <th id="ht"><h1>Time</h1></th>
+  </tr>
+  <tr id="second_first_tr">
+    <td id="td1"><h1>Object Oriented System Development (204)</h1>
+      <p id="p1">Teacher:<span id="sp1">Daw Cho Zin Oo </span><button class="bt"><span>Detail</span></button></p>
+    </td>
+    <td id="td1" align="center"><h1>M-1</h1></td>
+    <td id="td1"><h1>8:30-9:20</h1></td>
+  </tr>
+  <tr id="second_second_tr">
+    <td id="td1"><h1>Advanced Data Structure(203)</h1>
+      <p id="p1">Teacher:<span id="sp1">Dr.Ei Ei Mon </span><button class="bt"><span>Detail</span></button></p>
+    </td>
+    <td id="td1" align="center"><h1>Lab-3</h1></td>
+    <td id="td1"><h1>9:30-10:20</h1></td>
+  </tr> 
+  <tr id="second_third_tr">
+    <td id="td1"><h1>Advanced Java Programming(201)</h1>
+      <p id="p1">Teacher:<span id="sp1">Daw Thin Thin Win     </span><button class="bt"><span>Detail</span></button></p>
+    </td>
+    <td id="td1" align="center"><h1>Lab-3</h1></td>
+      <td id="td1"><h1>10:30-11:20</h1></td>
+</tr>
+<tr id="second_fouth_tr">
+  <td id="td2" colspan="3"><h1 align="center"> Break Time</h1>
+    </td>
+    
+</tr>
+<tr id="second_fifth_tr">
+  <td id="td1"><h1>Mathematics of Computing II (202)</h1>
+      <p id="p1">Teacher:<span id="sp1">Daw Myint Myint Maw  </span><button class="bt"><span>Detail</span></button><br>
+      </p>
+    </td>
+    <td id="td1" align="center"><h1>H-1</h1></td>
+    <td id="td1"><h1>12:30-1:20/1:30-2:30</h1></td>
+</tr>
+
+<tr id="second_seventh_tr">
+  <td id="td1"><h1>Solfware Engineering and System Analysis And Design(206) </h1>
+      <p id="p1">Teacher:<span id="sp1">Dr.Aye Aye Saint</span><button class="bt"><span>Detail</span></button></p>
+    </td>
+    <td id="td1" align="center"><h1>H-1</h1>
+      <td id="td1"><h1>2:30-3:20</h1></td>
+</tr>
+</table>
+      </div>
+  </div>
+  <!-- end Time Table for Section B -->
+
+  <!-- time Table for CT -->
+  <div class="panel" id="panel-3">
+    <div class="third-row" data-aos="flip-left">
+        <table border="2">
+            <tbody>
+              <tr>
+                <th colspan="3" id="hd">Today Time Table</th>
+              </tr>
+              <tr>
+                <th id="ht"><h1>Subject &amp; Teacher</h1></th>
+                <th id="ht"><h1>Room No.</h1></th>
+                <th id="ht"><h1>Time</h1></th>
+              </tr>
+              <tr id="third_first_tr">
+                <td id="td1"><h1>Mathematics Of Computing II(202)</h1>
+                  <p id="p1">Teacher:<span id="sp1">Daw Myint Myint Maw    </span><button class="bt"><span>Detail</span></button></p>
+                </td>
+                <td id="td1" align="center">
+                  <h1>H-3</h1></td>
+                <td id="td1">
+                  <h1>8:30-9:20</h1>
+                </td>
+            </tr>
+              <tr id="third_second_tr">
+                <td id="td1"><h1>English</h1>
+                  <p id="p1">Teacher:<span id="sp1">Daw Thida Lin   </span><button class="bt"><span>Detail</span></button></p>
+                </td>
+                <td id="td1" align="center">
+                  <h1>E Lab-2</h1>
+                </td>
+                <td id="td1">
+                  <h1>9:30-10:20</h1>
+                </td>
+              </tr>
+              <tr id="third_third_tr">
+                <td id="td1">
+                  <h1>Advanced Java Programming(201)</h1>
+                  <p id="p1">Teacher:<span id="sp1">Daw Thin Thin Win</span>
+                    <button class="bt"><span>Detail</span></button></p>
+                </td>
+                <td id="td1" align="center">
+                  <h1>Lab-1</h1>
+                </td>
+                <td id="td1">
+                  <h1>10:30-11:20</h1>
+                </td>
+            </tr>
+            <tr id="third_fouth_tr">
+              <td id="td2" colspan="3">
+                <h1 align="center">Break Time</h1>
+                </td>
+              
+            </tr>
+            <tr id="third_fifth_tr">
+              <td id="td1">
+                <h1>Electrical Circuits(206)</h1>
+                  <p id="p1">Teacher:<span id="sp1">Daw Htar Ei Khaing   </span><button class="bt"><span>Detail</span></button><br>
+                  </p>
+                </td>
+                <td id="td1" align="center">
+                  <h1>H-3</h1>
+                </td>
+                <td id="td1">
+                  <h1>12:30-1:20</h1>
+                </td>
+            </tr>
+            <tr id="third_sixth_tr">
+              <td id="td1">
+                <h1>Digital System Design I(205)</h1>
+                  <p id="p1">Teacher:<span id="sp1">Daw Soe Soe Mon </span><button class="bt"><span>Detail</span></button></p>
+                </td>
+                <td id="td1" align="center">
+                  <h1>H-3</h1>
+                </td>
+                <td id="td1">
+                  <h1>1:30-2:20</h1>
+                </td>
+            </tr>
+            <tr id="third_seventh_tr">
+                <td id="td1">
+                  <h1>Advanced Data Structure(203)</h1>
+                    <p id="p1">Teacher:<span id="sp1">Daw Cherry Soe </span><button class="bt"><span>Detail</span></button></p>
+                </td>
+                <td id="td1" align="center">
+                  <h1>Lab-1</h1>
+                  </td>
+                  <td id="td1">
+                    <h1>2:30-3:20</h1>
+                  </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+    </div>
+
+</div>
+  <!-- end Time Table for CT -->
+  <div class="fouth-row">
+      <center><a href="index.html"><button class="btt aos-init aos-animate"><span>Back</span></button></a></center>
+    </div>
+  <script>
+    function get(obj) {
+return document.getElementById(obj); }
+function switchOne() { get("tab-1").style.background = "#fff"; get("tab-2").style.background = "#67b8f7"; get("tab-3").style.background = "#67b8f7"; get("panel-1").style.display = "block"; get("panel-2").style.display = "none"; get("panel-3").style.display = "none";
+}
+function switchTwo() { get("tab-1").style.background = "#67b8f7"; get("tab-2").style.background = "#fff"; get("tab-3").style.background = "#67b8f7"; get("panel-1").style.display = "none"; get("panel-2").style.display = "block"; get("panel-3").style.display = "none";
+}
+function switchThree() { get("tab-1").style.background = "#67b8f7"; get("tab-2").style.background = "#67b8f7"; get("tab-3").style.background = "#fff"; get("panel-1").style.display = "none"; get("panel-2").style.display = "none"; get("panel-3").style.display = "block";
+}
+</script>
+
+<script type="text/javascript" src="js/aos.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
